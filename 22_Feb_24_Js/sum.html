@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <label for="">Number 1</label>
+    <input type="number" id="number1"> <br>
+
+    <label for="">Number 2</label>
+    <input type="number" id="number2"> <br>
+    <input type="submit" value="Sum" onclick="doSum()"> <br> <br>
+
+
+    <label for="">Number 3</label>
+    <input type="number" id="number3"> <br>
+    <label for="">Number 4</label>
+    <input type="number" id="number4"> <br>
+
+    <input type="submit" value="Subtract" onclick="doSubtract()"> <br> <br>
+
+    <input type="submit" value="Multiply" onclick="doMultiply()"> <br> <br>
+
+    <input type="submit" value="Divide" onclick="doDivide()"> 
+
+    <script>
+        function doSum() {
+
+            let number1 = document.getElementById('number1').value;
+            let number2 = document.getElementById('number2').value;
+
+            let nu1Toint = parseFloat(number1);
+            let nu2Toint = parseFloat(number2);
+
+            let result = nu1Toint + nu2Toint;
+
+            document.write(result);
+        }
+
+        function doSubtract() {
+            let number3 = document.getElementById('number3').value;
+            let number4 = document.getElementById('number4').value;
+
+            let nu3Toint = parseFloat(number3);
+            let nu4Toint = parseFloat(number4);
+
+            let result = nu3Toint - nu4Toint;
+            document.write(result);
+        }
+
+        function doMultiply() {
+            let number2 = document.getElementById('number2').value;
+            let number4 = document.getElementById('number4').value;
+
+            let nu2Toint=parseFloat(number2);
+            let nu4Toint=parseFloat(number4);
+
+            let result=nu2Toint*nu4Toint;
+            document.write(result);
+        }
+
+        function doDivide(){
+            let number1=document.getElementById('number1').value;
+            let number3=document.getElementById('number3').value;
+
+            let nu1Toint=parseFloat(number1);
+            let nu3Toint=parseFloat(number3);
+
+            let result=nu1Toint/nu3Toint;
+            document.write(result);
+        }
+    </script>
+</body>
+
+</html>
