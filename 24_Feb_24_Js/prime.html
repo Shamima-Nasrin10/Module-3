@@ -10,13 +10,23 @@
 <body>
 
     <script>
+        let userInput = prompt("Enter your number to check it is prime or not");
 
-        let userInput = prompt("Please enter begining number");
-        let prime;
-        for (let i = userInput; i <= 100; i++) {
-            factorial *= i;               //factorial=factorial*i
+        let count = 0;
+
+        for (let i = 1; i <= userInput; i++) {
+            if (userInput % i == 0) {
+                count += 1;
+            }
         }
-        document.write(factorial);
+        if (count == 2) {
+            document.write("It is prime Number");
+        }
+        else {
+            document.write("It is not prime Number");
+        }
+
+
 
 
 
