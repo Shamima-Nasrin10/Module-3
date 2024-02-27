@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prime List</title>
+</head>
+
+<body>
+
+    <script>
+
+        let userInput = prompt("Enter any number");
+
+        
+
+        for (let j = userInput; j <= 100; j++) {
+            let count = 0;
+            for (let i = 2; i < userInput; i++) {
+                if (j % i == 0) {
+                    count += 1;
+                    break;
+                }
+                else {
+
+                }
+            }
+            if (j>1 && count == 0) {
+                document.write(j+"</br>");
+            }
+            else {
+
+            }
+        }
+        
+    </script>
+</body>
+
+</html>
