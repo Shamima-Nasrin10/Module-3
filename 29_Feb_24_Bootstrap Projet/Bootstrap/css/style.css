@@ -1,0 +1,36 @@
+.container{
+    margin-top:5px;
+}
+.card-header{
+    background-color: rgb(0, 102, 102);
+}
+.card-body{
+    background-image: linear-gradient(to right, rgb(142, 216, 223), rgb(142, 218, 248), rgb(144, 209, 195), rgb(107, 209, 201), rgb(72, 184, 150));
+}
+#collapse-button{
+    background-color: white;
+}
+#search{
+  margin-right: 16px;
+  border-bottom: 1px;
+  font-size: 17px;
+}
+.rounded-circle{
+    width: 100px;
+    height: 100px;
+}
+#header-paragraph{
+    font-size: 40px;
+    font-weight: bolder;
+    color: rgba(255, 255, 255, 0.815);
+    text-shadow: rgba(189, 184, 184, 0.89);
+}
+#first-header{
+    text-align: center;
+    color: white;
+    font-weight: bold;
+}
+#button-div{
+    display:flex;
+    margin-top: 60px;
+}
