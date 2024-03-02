@@ -11,166 +11,172 @@
 </head>
 
 <body>
-    <div class="container">
-        <!-- Header & Navbar Start -->
+    <div class="container" style="width: 100%; height: 100%;">
 
-        <div class="card">
-            <div class="card-header">
-                <div class="collapse" id="navbarToggleExternalContent" data-bs-theme="dark">
-                    <div class="bg-dark p-0">
-                        <h5 class="text-body-emphasis h4">Collapsed content</h5>
-                        <span class="text-body-secondary">Toggleable via the navbar brand.</span>
-                    </div>
-                </div>
-                <nav class="navbar">
-                    <div class="row">
-                        <div class="col-md-6">
-                            <div class="row d-flex">
-                                <div class="container-fluid col-md-6">
-                                    <button id="collapse-button" class="navbar-toggler" type="button"
-                                        data-bs-toggle="collapse" data-bs-target="#navbarToggleExternalContent"
-                                        aria-controls="navbarToggleExternalContent" aria-expanded="false"
-                                        aria-label="Toggle navigation">
-                                        <span class="navbar-toggler-icon"></span>
-                                    </button>
-                                </div>
-                                <div class="container-fluid col-md-6">
-                                    <form class="d-flex" role="search">
-                                        <input type="text" placeholder="Search.." id="search">
-                                        <i class="fa-solid fa-magnifying-glass"></i>
-                                    </form>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </nav>
-            </div>
-            <div class="card-body">
+            <!-- Carousel & Card Start -->
+            
+
+            <div class="carousel-card">
+
                 <div class="row">
-                    <div class="col-md-6">
-                        <div class="row">
-                            <div class="col-md-3">
-                                <img src="images/bb-logo.png" alt="" class="rounded-circle">
-                            </div>
-                            <div class="col-md-9">
-                                <p id="header-paragraph">
-                                    BANGLADESH BANK
-                                </p>
-                                <h4 id="first-header">
-                                    Central Bank of Bangladesh
-                                </h4>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6" id="button-div">
+                    <!-- Carousel Start -->
+                    <div class="col-md-10 my-5 p-3">
 
-                        <div class="btn-group" role="group" aria-label="Basic mixed styles example">
-                            <button type="button" class="btn btn-light">
-                                <ul class="menu">
-                                    <li><a href="#">About Us</a>
-                                        <ul class="sub-menu">
-                                            <li><a href="#about">Department & Offices</a></li>
-                                            <li><a href="#services">Vision & Mission</a></li>
-                                            <li><a href="#contact">Strategic Plan</a></li>
-                                        </ul>
-                                    </li>
-                                </ul>
+                        <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img src="images/c-1.jpg" class="d-block w-2500vh" alt="...">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="images/c-2.jpg" class="d-block w-250vh" alt="...">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="images/c-3.jpg" class="d-block w-250vh" alt="...">
+                                </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button"
+                                data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
                             </button>
-                            <button type="button" class="btn btn-light"><a id="first-anchor" href=""
-                                    target="content">MONETARY POLICY</a></button>
-                            <button type="button" class="btn btn-light"><a id="first-anchor" href=""
-                                    target="content">FINANCIAL SYSTEM</a></button>
-                            <button type="button" class="btn btn-light"><a id="first-anchor" href=""
-                                    target="content">PUBLICATION</a></button>
+                            <button class="carousel-control-next" type="button"
+                                data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                            </button>
                         </div>
 
                     </div>
-                </div>
-            </div>
-        </div>
 
-        <!-- Header & Navbar End -->
+                    <!-- Carousel End -->
 
-        <!-- Carousel & Card Start -->
+                    <!-- Card Start -->
 
-        <div class="carousel-card">
+                    <div class="col-md-2 my-5">
 
-            <div class="row">
-                <!-- Carousel Start -->
-                <div class="col-md-10 my-5 p-3">
-
-                    <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
-                        <div class="carousel-inner">
-                            <div class="carousel-item active">
-                                <img src="images/c-1.jpg" class="d-block w-2500vh" alt="...">
-                            </div>
-                            <div class="carousel-item">
-                                <img src="images/c-2.jpg" class="d-block w-250vh" alt="...">
-                            </div>
-                            <div class="carousel-item">
-                                <img src="images/c-3.jpeg" class="d-block w-250vh" alt="...">
+                        <div class="card" style="width: 10rem; height: 15rem;">
+                            <img src="images/governor.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Honorable Governor</h5>
+                                <p class="card-text">MR ABDUR ROUF TALUKDER</p>
+                                <a href="#" class="btn btn-primary" target="">More</a>
                             </div>
                         </div>
-                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying"
-                            data-bs-slide="prev">
-                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                            <span class="visually-hidden">Previous</span>
-                        </button>
-                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying"
-                            data-bs-slide="next">
-                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                            <span class="visually-hidden">Next</span>
-                        </button>
+
+                    </div>
+
+                    <!-- Card End -->
+                </div>
+
+            </div>
+
+            <!-- Carousel & Card End -->
+
+            <!-- Box section start -->
+
+            <div class="row" box-section>
+
+                <!-- Left part Start -->
+                <div class="col-md-8">
+                    <!-- Upper Card Start-->
+
+                    <div class="row" id="uppercard">
+
+                        <div class="col-md-6">
+                            <div class="card" style="width: 23rem;">
+                                <img src="images/card1.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">MONETARY POLICY</h5>
+                                    <p class="card-text">Bangladesh Bank (BB)'s Monetary Policy Statements (MPS) outline
+                                        the
+                                        monetary policy stance, designed to support government's policies and programs
+                                        in
+                                        pursuit of faster inclusive economic growth and poverty reduction; while also
+                                        maintaining price stability.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="card" style="width: 23rem;">
+                                <img src="images/card-2.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">MEDIA & PRESS RELEASE</h5>
+                                    <p class="card-text">The auction of Bangladesh Bank repo, assured liquidity support
+                                        facility (ASLF), standing lending facility (SLF) for the commercial banks and
+                                        financial institutions and Islamic Banks Liquidity Facility (IBLF), Mudaraba
+                                        Liquidity Support (MLS) and for shari’ah based banks was held on Wednesday, 28
+                                        February 2024.</p>
+                                </div>
+                            </div>
+                        </div>
+
+
+                    </div>
+
+                    <!-- Upper Card End -->
+                    <div class="row my-5">
+
+                        <div class="col-md-6">
+                            <div class="card" style="width: 23rem;">
+                                <img src="images/card3.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">INVESTMENT FACILITY</h5>
+                                    <p class="card-text">Bangladesh offers generous opportunities for investment under
+                                        its
+                                        liberalised Industrial Policy and export-oriented, private sector-led growth
+                                        strategy. Sectors like(i.e. (1) arms and ammunition and other defence equipment
+                                        and
+                                        machinery, (2) forest plantation and mechanised extraction) are open for private
+                                        investment in Bangladesh.</p>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="card" style="width: 23rem;">
+                                <img src="images/card-5.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">GOVERNMENT SECURITIES</h5>
+                                    <p class="card-text">Government Security Market of Bangladesh consists of Treasury
+                                        Bill,
+                                        Bangladesh Government Treasury Bond (BGTB) and Bangladesh Government Investment
+                                        Sukuk (BGIS). Banks, Non-bank Financial Institutions and
+                                        Individuals can invest in Government securities.</p>
+
+                                </div>
+                            </div>
+                        </div>
                     </div>
 
                 </div>
 
-                <!-- Carousel End -->
 
-                <!-- Card Start -->
+                <!-- Left part end -->
 
-                <div class="col-md-2 my-5">
+                <div class=" col-md-1 d-flex" style="height: 1040px; color: rgb(6, 129, 103);">
+                    <div class="vr"></div>
+                </div>
 
-                    <div class="card" style="width: 10rem; height: 15rem;">
-                        <img src="images/governor.jpg" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title">Honorable Governor</h5>
-                            <p class="card-text">MR ABDUR ROUF TALUKDER</p>
-                            <a href="#" class="btn btn-primary" target="">More</a>
-                        </div>
-                    </div>
+                <!-- Right part Start -->
+
+                <div class="col-md-3">
+
 
                 </div>
 
-                <!-- Card End -->
+                <!-- Right Part End -->
+
             </div>
+            <!-- box section end -->
 
-        </div>
-
-        <!-- Carousel & Card End -->
-
-        <!-- Box section start -->
-
-        <div class="row" box-section>
-
-            <!-- Left part Start -->
-            <div class="col-md-8">
-                <div class="row">
-
-                    
-
-                </div>
-            </div>
-            <!-- Left part end -->
-            <div class="col-md-4"></div>
-
-        </div>
-        <!-- box section end -->
 
     </div>
     <div>
 
-        <iframe src="" frameborder="0" name="content" width="100%" height="100%"></iframe>
+
+
+
+
 
     </div>
 

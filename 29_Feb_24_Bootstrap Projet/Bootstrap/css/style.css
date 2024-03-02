@@ -1,75 +1,85 @@
 .container{
-    margin-top:5px;
+  margin-top:5px;
 }
 .card-header{
-    background-color: rgb(0, 102, 102);
+  background-color: rgb(0, 102, 102);
 }
 .card-body{
-    background-image: linear-gradient(to right, rgb(142, 216, 223), rgb(142, 218, 248), rgb(144, 209, 195), rgb(107, 209, 201), rgb(72, 184, 150));
+  background-image: linear-gradient(to right, rgb(142, 216, 223), rgb(142, 218, 248), rgb(144, 209, 195), rgb(107, 209, 201), rgb(72, 184, 150));
 }
 #collapse-button{
-    background-color: white;
+  background-color: white;
 }
 #search{
-  margin-right: 16px;
-  border-bottom: 1px;
-  font-size: 17px;
+margin-right: 16px;
+border-bottom: 1px;
+font-size: 17px;
 }
 .rounded-circle{
-    width: 100px;
-    height: 100px;
+  width: 100px;
+  height: 100px;
 }
 #header-paragraph{
-    font-size: 40px;
-    font-weight: bolder;
-    color: rgba(255, 255, 255, 0.815);
-    text-shadow: rgba(189, 184, 184, 0.89);
+  font-size: 40px;
+  font-weight: bolder;
+  color: rgba(255, 255, 255, 0.815);
+  text-shadow: rgba(189, 184, 184, 0.89);
 }
 #first-header{
-    text-align: center;
-    color: white;
-    font-weight: bold;
+  text-align: center;
+  color: white;
+  font-weight: bold;
 }
 #button-div{
-    display:flex;
-    justify-content: end;
-    margin-top: 60px;
+  display:flex;
+  justify-content: end;
+  margin-top: 60px;
 }
 .btn{
-    width: 130px;
+  width: 130px;
 }
 #first-anchor{
-    font-size: smaller;
-    text-decoration: none;
+  font-size: smaller;
+  text-decoration: none;
 } 
 .menu { 
-    list-style: none; 
-    margin: 0; 
-    padding: 0; 
-  } 
-   
-  .menu li { 
-    display: inline-block; 
-    position: relative; 
-  } 
-   
-  .menu li a { 
-    color: #000; 
-    text-decoration: none; 
-    padding: 10px 15px; 
-    display: block; 
-  } 
-   
-  .sub-menu { 
-    display: none; 
-    position: absolute; 
-    background-color: #c8fcee; 
-    color: rgb(5, 54, 34);
-    width: 100%; 
-  } 
-   
-  .menu li:hover .sub-menu { 
-    display: block; 
-    padding: 5px;
-    margin: 3px;
-  }
+  list-style: none; 
+  margin: 0; 
+  padding: 0; 
+} 
+ 
+.menu li { 
+  display: inline-block; 
+  position: relative; 
+} 
+ 
+.menu li a { 
+  color: #000; 
+  text-decoration: none; 
+  padding: 10px 15px; 
+  display: block; 
+} 
+ 
+.sub-menu { 
+  display: none; 
+  position: absolute; 
+  background-color: #c8fcee; 
+  color: rgb(5, 54, 34);
+  width: 100%; 
+  font-size: small;
+} 
+ 
+.menu li:hover .sub-menu { 
+  display: block; 
+  padding: 5px;
+  margin: 3px;
+}
+#uppercard{
+  display: flex;
+}
+.footer {
+  background-color: #F7F5F3;
+  margin-top: 0.3rem;
+  padding: 0 1rem;
+  border-top: 3px solid #00b16A;
+}
