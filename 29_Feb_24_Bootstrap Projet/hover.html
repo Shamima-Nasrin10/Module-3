@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+         .menu { 
+        list-style: none; 
+        margin: 0; 
+        padding: 0; 
+      } 
+       
+      .menu li { 
+        display: inline-block; 
+        position: relative; 
+      } 
+       
+      .menu li a { 
+        color: #000; 
+        text-decoration: none; 
+        padding: 10px 15px; 
+        display: block; 
+      } 
+       
+      .sub-menu { 
+        display: none; 
+        position: absolute; 
+        background-color: #f0f0f0; 
+        width: 100%; 
+      } 
+       
+      .menu li:hover .sub-menu { 
+        display: block; 
+      } 
+    </style>
+</head>
+<body>
+    
+    <ul class="menu"> 
+        <li><a href="#home">Home</a> 
+          <ul class="sub-menu"> 
+            <li><a href="#about">About</a></li> 
+            <li><a href="#services">Services</a></li> 
+            <li><a href="#contact">Contact</a></li> 
+          </ul> 
+        </li> 
+      </ul> 
+       
+     
+
+</body>
+</html>
