@@ -1,0 +1,23 @@
+body {
+    background-color: rgb(72, 96, 97);
+}
+.nav-link{
+font-size: smaller;
+font-family: 'Times New Roman', Times, serif;
+color: white;
+}
+.btn{
+    width: 180px;
+    font-size: smaller;
+    background-color: rgb(137, 214, 12);
+    color: white;
+}
+.btn:hover{
+    background-color: rgb(72, 96, 97);
+    color: black;
+}
+#search{
+    background-color: transparent;
+    color: white;
+    border-color: transparent;
+}
