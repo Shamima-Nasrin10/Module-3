@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prime List</title>
+</head>
+
+<body>
+
+
+    <script>
+
+        let userInput = prompt('Enter any number to get list of prime from that number.');
+        
+
+        for (i = userInput; i <= 100; i++) {
+            let count = 0;
+            for (let j = 2; j < userInput; j++) {
+                if (i % j == 0) {
+                    count += 1;
+                
+                }
+            }
+            if (i > 1 && count == 0) {
+            document.write(i + '<br>');
+        }
+        else {
+
+        }
+
+        }
+        
+    </script>
+</body>
+
+</html>

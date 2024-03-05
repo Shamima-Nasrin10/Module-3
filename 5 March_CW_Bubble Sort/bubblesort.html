@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bubble Sort</title>
+</head>
+
+<body>
+
+
+    <script>
+
+        let myArray = [40, 50, 10, 80, 30, 20, 90];
+        document.write("Old: "+myArray);
+
+        for (let first = 0; first < myArray.length; first++) {
+
+            for (let second = 0; second < myArray.length - first - 1; second++) {
+                if (myArray[second] > myArray[second + 1]) {
+                    let temp = myArray[second];
+                    myArray[second] = myArray[second + 1];
+                    myArray[second + 1]=temp;
+                }
+            }
+        }
+        document.write("<br><br>New: "+myArray);
+
+    </script>
+</body>
+
+</html>
