@@ -62,7 +62,6 @@ return;
 if(hobby.length==0){
 alert("Select at least one hobby");
 return;
-return;
 }
 
 //End Validation
