@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LCM-For Loop</title>
+</head>
+
+<body>
+
+
+
+    <script>
+
+
+        // let n1 = parseInt(prompt("Enter first number"));
+        // let n2 = parseInt(prompt("Enter second number"));
+
+        // let lcm;
+        // // let i = 1;
+        // let maxNum = Math.max(n1, n2);
+        // let minNum = Math.min(n1, n2);
+        // let j;
+
+        // do {
+        //     j = maxNum * i;
+        //     if (j % minNum == 0) {
+        //         lcm = j;
+        //     }
+
+
+        //     i++;
+        // }
+        // while (i >= maxNum);
+        // document.write(lcm);
+
+        let n1 = parseInt(prompt("Enter first number"));
+        let n2 = parseInt(prompt("Enter second number"));
+
+        let lcm = 0;
+        let maxNum = Math.max(n1, n2);
+        let minNum = Math.min(n1, n2);
+        let j = 1;
+
+
+        for (let i = 1; i <= minNum; i++) {
+            j = maxNum * i;
+            if (j % minNum == 0) {
+                lcm = j;
+                document.write(lcm);
+                break;
+            }
+
+        }
+
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GCD</title>
+</head>
+
+<body>
+
+
+    <script>
+
+        let n1 = parseInt(prompt("Enter first number"));
+        let n2 = parseInt(prompt("Enter second number"));
+
+        let gcd = 0;
+        let i = 2;
+        let length=Math.max(n1,n2);
+        do {
+
+            if (n1 % i == 0 && n2 % i == 0) {
+                gcd = i;
+            }
+           
+
+            i++;
+        }
+        while (i<=length);
+        document.write(gcd);
+        
+
+    </script>
+</body>
+
+</html>
