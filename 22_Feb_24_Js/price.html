@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+
+    <label for="">Price:</label>
+    <input type="number" id="price"> <br> <br>
+    <label for="">Discount:</label>
+    <input type="number" id="discount"> <br> <br>
+    <input type="submit" value="Net Price" onclick="doDiscountedPrice()">
+
+    <script>
+        function doDiscountedPrice() {
+            let price = document.getElementById('price').value;
+            let discount = document.getElementById('discount').value;
+
+            let prToInt = parseFloat(price);
+            let disToInt = parseFloat(discount);
+            // let afterDis = 100 - disToInt;
+            // let result =((prToInt * afterDis) / 100);
+            let result=(prToInt*(100-disToInt))/100;
+            document.write(result);
+        }
+    </script>
+
+    
+<!-- 
+    <script>
+        
+            let price = document.getElementById('price').value;
+            let discount = document.getElementById('discount').value;
+
+            let prToInt = parseFloat(price);
+            let disToInt = parseFloat(discount);
+            // let afterDis = 100 - disToInt;
+            // let result =((prToInt * afterDis) / 100);
+            let result=(prToInt*(100-disToInt))/100;
+
+            console.log(result);
+            //document.write(result);
+    </script> -->
+
+
+
+</body>
+
+</html>
