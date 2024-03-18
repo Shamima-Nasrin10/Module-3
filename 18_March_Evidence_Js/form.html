@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration form</title>
+    <style>
+        #fieldset {
+            border: 3px solid rgb(131, 247, 193);
+            background-color: rgb(209, 247, 247);
+        }
+
+        #submit {
+            background-color: rgb(153, 235, 228);
+            border-radius: 100px;
+            border-color: aqua;
+            color: black;
+            font-weight: bold;
+            font-size: medium;
+        }
+    </style>
+</head>
+
+<body>
+
+
+    <form action="" id="myForm">
+
+
+        <fieldset id="fieldset">
+
+            <legend>
+                <h2>Registratiion Form</h2>
+            </legend>
+
+            Name <br>
+            <input type="text" name="" id="name"> <br> <br>
+            Contact <br>
+            <input type="text" id="contact"> <br> <br>
+            Remark <br>
+            <textarea name="" cols="30" rows="10" id="remark"></textarea> <br> <br>
+
+            Sex <br>
+            <input type="radio" name="gender" id="male"> Male  &nbsp;
+            <input type="radio" name="gender" id="female">Female <br> <br>
+
+            Courses <br>
+            <input type="checkbox" name="courses" id="" value="NT">NT &nbsp;
+            <input type="checkbox" name="courses" id="" value="IAD">IAD &nbsp;
+            <input type="checkbox" name="courses" id="" value="DDD">DDD &nbsp;
+            <input type="checkbox" name="courses" id="" value="ESAD">ESAD <br> <br>
+            Location <br>
+            <select name="" id="location">
+                <option value="Banani">Banani</option>
+                <option value="Dhanmondi">Dhanmondi</option>
+                <option value="Mirpur">Mirpur</option>
+            </select> <br> <br>
+            <input type="submit" value="Submit" id="submit">
+
+        </fieldset>
+
+
+    </form>
+
+
+    <script src="Js/form.js"></script>
+</body>
+
+</html>
