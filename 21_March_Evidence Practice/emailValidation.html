@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Email Validation</title>
+</head>
+
+<body>
+
+    <script>
+
+        let email = prompt("Enter email address");
+
+        const regEx = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+
+        if (regEx.test(email)) {
+            alert("Email address is correct.");
+        }
+        else {
+            alert("Email address is wrong.");
+        }
+
+    </script>
+
+
+</body>
+
+</html>

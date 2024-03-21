@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <style>
+
+#fieldset{
+    border: 2px solid slateblue;
+    background-color: aliceblue;
+}
+#submit{
+    padding: 5px;
+    color: white;
+    background-color: rgb(8, 148, 43);
+    font-weight: bold;
+}
+
+    </style>
+</head>
+
+<body>
+
+
+    <form action="" id="myForm">
+
+
+        <fieldset id="fieldset">
+
+
+            <legend>
+                <h3>Registration Form</h3>
+            </legend>
+            Full Name <br>
+            <input type="text" id="name"> <br> <br>
+            Contact <br>
+            <input type="text" id="contact"> <br> <br>
+            Remarks <br>
+            <textarea name="" id="remark" cols="50" rows="10"></textarea> <br> <br>
+
+
+            Sex: &nbsp; 
+            <input type="radio" name="sex" value="Female">Female
+            <input type="radio" name="sex" value="Male">Male <br> <br>
+            Courses &nbsp;
+
+            <input type="checkbox" value="NT" name="courses">NT &nbsp;
+            <input type="checkbox" value="IAD" name="courses">IAD &nbsp;
+            <input type="checkbox" value="DDD" name="courses">DDD &nbsp;
+            <input type="checkbox" value="ESAD" name="courses">ESAD &nbsp;
+
+            <br> <br>
+
+            Location &nbsp;
+            <select name="" id="location">
+
+                <option value="Banani">Banani</option>
+                <option value="Mirpur">Mirpur</option>
+                <option value="Dhanmondi">Dhanmondi</option>
+
+            </select> <br> <br>
+            <input type="submit" value="Submit" id="submit">
+
+
+
+
+
+        </fieldset>
+
+
+    </form>
+
+    <script src="Js/form.js"></script>
+
+
+</body>
+
+</html>
