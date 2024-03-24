@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+
+    <style>
+#fieldset{
+border: 2px solid rgb(100, 184, 128);
+background-color: rgb(221, 247, 245);
+
+}
+#submit{
+
+    color: white;
+    background-color: darkcyan;
+    font-weight: bold;
+    font-size: medium;
+}
+    </style>
+</head>
+
+<body>
+
+    <form action="" id="myForm">
+
+        <fieldset id="fieldset">
+
+            <legend>
+                <h3>Registration Form</h3>
+            </legend>
+            Name: &nbsp; <input type="text" id="name"> <br> <br>
+            Email: &nbsp; <input type="email" id="email"> <br> <br>
+
+            Sex: &nbsp;
+            <input type="radio" name="sex" value="Female">Female &nbsp;
+            <input type="radio" name="sex" value="Male">Male <br> <br>
+
+            Courses: &nbsp;
+            <input type="checkbox" name="courses" value="NT">NT &nbsp;
+            <input type="checkbox" name="courses" value="JEE">JEE &nbsp;
+            <input type="checkbox" name="courses" value="DDD">DDD &nbsp;
+            <input type="checkbox" name="courses" value="ESAD">ESAD &nbsp;
+            <br> <br>
+
+            Location &nbsp;
+            <select id="location">
+
+                <option value="Banani">Banani</option>
+                <option value="Mirpur">Mirpur</option>
+                <option value="Dhanmondi">Dhanmondi</option>
+
+            </select>
+            <br> <br>
+
+
+            <input type="submit" value="Submit" id="submit">
+
+        </fieldset>
+
+
+    </form>
+
+
+
+
+
+    <script src="JS/form.js"></script>
+</body>
+
+</html>

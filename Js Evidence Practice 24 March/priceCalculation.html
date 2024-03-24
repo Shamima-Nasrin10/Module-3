@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Price</title>
+</head>
+
+<body>
+
+    <div class="container">
+        Unit Price: &nbsp;
+        <input type="text" id="unitPrice" oninput="calculatePrices()"> <br> <br>
+        Amount: &nbsp;
+        <input type="text" id="amount" oninput="calculatePrices()"> <br> <br>
+        Total Price: &nbsp;
+        <input type="text" id="totalPrice"> <br> <br>
+
+        Discount (%): &nbsp;
+        <input type="text" id="discount" oninput="calculatePrices()"> <br> <br>
+        Discount Amount: &nbsp;
+        <input type="text" id="discountAmount"> <br> <br>
+        Net Price: &nbsp;
+        <input type="text" id="netPrice"> <br> <br>
+
+
+    </div>
+
+
+
+
+
+    <script>
+
+
+        function calculatePrices() {
+
+            let unitPrice = parseInt(document.getElementById('unitPrice').value) || 0;
+            let amount = parseInt(document.getElementById('amount').value) || 0;
+
+
+            let totalPrice = unitPrice * amount;
+            document.getElementById('totalPrice').value = totalPrice;
+
+
+
+            let discount = parseInt(document.getElementById('discount').value) || 0;
+            let discountAmount = totalPrice * (discount / 100);
+            document.getElementById('discountAmount').value = discountAmount;
+
+            let netPrice = totalPrice - discountAmount;
+            document.getElementById('netPrice').value = netPrice;
+
+
+        }
+
+
+    </script>
+
+</body>
+
+</html>
