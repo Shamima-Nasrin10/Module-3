@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bubble</title>
+</head>
+
+<body>
+    <script>
+
+        let myArray = [30, 50, 20, 10, 80, 60, 45];
+        document.write("Old Array: " + myArray + "<br>")
+        for (let f = 0; f < myArray.length; f++) {
+            for (let s = 0; s < myArray.length - f - 1; s++) {
+                if (myArray[s] > myArray[s + 1]) {
+                    let temp = myArray[s];
+                    myArray[s] = myArray[s + 1];
+                    myArray[s + 1] = temp;
+                }
+            }
+        }
+        document.write("New Array: "+myArray)
+
+    </script>
+</body>
+
+</html>

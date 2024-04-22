@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prime</title>
+</head>
+
+<body>
+
+    <script>
+
+        let userInput = parseInt(prompt('Enter any number.'));
+        count = 0;
+
+        for (let i = 1; i <= userInput; i++) {
+            if (userInput % i == 0) {
+                count += 1;
+            }
+        }
+        if (count == 2) {
+            alert("IT is prime number.");
+        }
+        else {
+            alert("IT is  not prime number.");
+        }
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <div class="container">
+        <br> <br> <br>
+
+        Unit Price
+        <input type="text" id="uPrice" oninput="calculatePrice()"> <br> <br>
+        Quantity
+        <input type="text" id="quantity" oninput="calculatePrice()"> <br> <br>
+        Toal Price
+        <input type="text" id="tPrice"> <br> <br>
+        Discount(%)
+        <input type="text" id="discount" oninput="calculatePrice()"> <br> <br>
+        Discount Amount
+        <input type="text" id="disAm"> <br> <br>
+        Net Price
+        <input type="text" id="nPrice">
+
+    </div>
+    <script>
+        function calculatePrice() {
+            let uPrice = parseFloat(document.getElementById('uPrice').value) || 0;
+            let quantity = parseFloat(document.getElementById('quantity').value) || 0;
+
+            let totalPrice = uPrice * quantity;
+            document.getElementById('tPrice').value = totalPrice.toFixed(2);
+
+            let discount = parseFloat(document.getElementById('discount').value) || 0;
+            let disAmount = totalPrice * (discount / 100);
+            document.getElementById('disAm').value = disAmount.toFixed(2);
+
+            let netPrice = totalPrice - disAmount;
+            document.getElementById('nPrice').value = netPrice.toFixed(2);
+        }
+    </script>
+</body>
+
+</html>
